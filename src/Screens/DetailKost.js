@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Image, ScrollView, Dimensions, Animated} from 'react-native'
-import { Container, Header, Content, Footer, FooterTab, Button,  View, Text, Item} from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button,  View, Text, Right, Item} from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const { width } = Dimensions.get('window');
@@ -122,10 +122,12 @@ export default class DetailKost extends Component {
                 <Text style={{fontWeight:'bold'}}> Rp. 1.500.000 / bulan  </Text>
                 <Text> Lihat semua harga </Text>
             </View>
-            <View style={{flexDirection:'row', justifyContent: 'flex-end', paddingHorizontal: 6}}>
-                <Button style={{marginRight:8, backgroundColor:'white', borderColor:'green' , borderRadius:6, width: 96, borderWidth:1,}}><Text style={{color:'black', textAlign:'center'}}>Hubungi Kost</Text></Button>
+            <Right>
+            <View style={{flexDirection:'row', justifyContent: 'center', paddingHorizontal: 8}}>
+            <Button style={{backgroundColor: 'white' , marginRight:4, borderRadius:6, width: 96, borderWidth:1, alignItems:'center'}}><Text style={{textAlign:'center', color:'black', marginTop: 16}}>Hubungi Kost</Text></Button>
                 <Button style={{backgroundColor: 'green' , marginRight:4, borderRadius:6, width: 96 }}><Text>Booking</Text></Button>
             </View>
+            </Right>
           </FooterTab>
         </Footer>
       </Container>

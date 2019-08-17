@@ -2,7 +2,7 @@ import React, {Component} from 'React'
 import {Image, View} from 'react-native'
 import { Container, Header, Item, Input, Button, Text, Content, Card, CardItem, Thumbnail, Left, Body, Right, Tabs, Tab, TabHeading, ScrollableTab} from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { SearchBar } from 'react-native-elements';
+// import { SearchBar } from 'react-native-elements';
 
 export default class ListKost extends Component {
     render() {
