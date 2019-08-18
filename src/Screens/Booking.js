@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, DatePicker, Text, Left, Button, Icon,Body, Title, View, List, ListItem, Thumbnail, Right } from 'native-base';
 
-import DateComponent from '../Component/date'
+import DateComponent from '../Components/date'
 import { TouchableOpacity, } from 'react-native';
 
 export default class DatePickerExample extends Component {

@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import MapView, { Marker } from 'react-native-maps';
 
-export default class AddIklan extends Component {
+export default class AddOffer extends Component {
         state = {
             keyword: '',
           };
@@ -62,13 +62,7 @@ export default class AddIklan extends Component {
           containerStyle={{padding:0, marginTop: 8, marginBottom:8 ,marginHorizontal:6, marginLeft:14, backgroundColor:'black', borderRadius: 10 }}
           inputContainerStyle={{backgroundColor:"white", borderRadius: 10,margin:1}}
          /> */}
-
-         <Form>
-            <Item stackedLabel>
-              <Label>Pemilik Kost</Label>
-              <Input />
-            </Item>
-            <Item>
+         <Item>
               <MapView style={{width: '100%', height: 300}}
                 region={{
                   latitude: -6.301576,
@@ -85,8 +79,27 @@ export default class AddIklan extends Component {
                   latitudeDelta: 0.015,
                   longitudeDelta: 0.0121
                 }} image={{uri: 'https://image.flaticon.com/icons/svg/25/25231.svg'}} />
-              </MapView>
+              </MapView>          
             </Item>
+            
+              <View>
+              <Form >
+             < Item stackedLabel>
+              <Label>Pemilik Kssost</Label>
+              <Input />
+              </Item>
+              <Item stackedLabel>
+              <Label>longtitude Kssost</Label>
+              <Input />
+            </Item>
+            </Form>
+              </View>
+         <Form>
+            <Item stackedLabel>
+              <Label>Pemilik Kost</Label>
+              <Input />
+            </Item>
+            
             <Item stackedLabel>
               <Label>Nomor handphone Pemilik Kost</Label>
               <Input />
